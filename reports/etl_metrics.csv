@@ -1,0 +1,2 @@
+rows_extracted,rows_transformed,rows_loaded,invalid_records,duplicates_removed,orphan_appointments,orphan_treatments
+14100,12436,0,0,347,880,950

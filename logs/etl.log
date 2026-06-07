@@ -1,0 +1,10 @@
+2026-06-07 15:56:21,678 - INFO - Extract started
+2026-06-07 15:56:21,730 - INFO - Extract completed: 14100 rows
+2026-06-07 15:56:21,731 - INFO - Validation started
+2026-06-07 15:56:21,749 - INFO - Validation completed
+2026-06-07 15:56:21,749 - INFO - Transform started
+2026-06-07 15:56:21,788 - INFO - Transform completed
+2026-06-07 15:56:21,788 - INFO - Enrich started
+2026-06-07 15:56:21,845 - INFO - Enrich completed
+2026-06-07 15:56:22,035 - INFO - Silver CSV files saved locally
+2026-06-07 15:56:22,037 - INFO - Load step completed. Rows ready for Snowflake: 9689

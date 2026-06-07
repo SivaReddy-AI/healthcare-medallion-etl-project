@@ -1,0 +1,4 @@
+table_name,row_count,missing_columns,missing_values,duplicate_rows
+patients,1100,,261,0
+appointments,5500,,284,0
+treatments,7500,,711,0

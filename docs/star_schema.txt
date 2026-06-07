@@ -1,0 +1,24 @@
+Healthcare Medallion Star Schema
+
+Bronze Layer:
+- Raw CSV files stored in AWS S3 exactly as received.
+- Files: patients.csv, appointments.csv, treatments.csv.
+
+Silver Layer:
+- Cleaned and standardized CSV files stored in AWS S3.
+- Outputs: dim_patient.csv, dim_appointment.csv, dim_doctor.csv, fact_treatment.csv.
+
+Gold Layer:
+- Snowflake dimensional model.
+
+Relationships:
+
+dim_patient.patient_id 1 ---- * dim_appointment.patient_id
+ dim_doctor.doctor_id 1 ---- * dim_appointment.doctor_id
+ dim_appointment.appointment_id 1 ---- * fact_treatment.appointment_id
+
+Tables:
+- dim_patient: patient profile and frequent visitor flag.
+- dim_doctor: doctor lookup table.
+- dim_appointment: appointment visit metrics and cost summaries.
+- fact_treatment: treatment-level fact table with cost and duration.
