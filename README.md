@@ -1,1 +1,0 @@
-# healthcare-medallion-etl-project
